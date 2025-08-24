@@ -2,8 +2,11 @@ name: Generate contribution snake
 
 on:
   schedule:
-    - cron: '0 0 * * *' # tous les jours à 00:00 UTC
+    - cron: '0 0 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -12,14 +15,10 @@ jobs:
       - name: Generate snake images
         uses: Platane/snk@v3
         with:
-          # lit ton graph depuis le user du repo (recommandé par la doc)
           github_user_name: ${{ github.repository_owner }}
-          # fichiers de sortie (+ options possibles via query string)
-          # palettes disponibles: github, github-dark, github-light
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
