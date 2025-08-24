@@ -60,3 +60,11 @@ This is my place to learn, create, and share — _my casa of code_ 🏡💻
 
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-111111?logo=anthropic&logoColor=white)
 ![Cursor](https://custom-icon-badges.demolab.com/badge/Cursor-000000?logo=cursor-ai-white)
+
+## 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mikahza/Mikahza/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mikahza/Mikahza/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Mikahza/Mikahza/output/github-snake.svg" />
+</picture>
